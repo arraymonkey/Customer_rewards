@@ -1,0 +1,17 @@
+* {
+    -color :#BDBDBD;
+    -gray : #FF9800;
+    -darkGray : #757575;
+    -black : #212121;
+    -abort : #e74c3c;
+}
+
+#fpane{
+    -fx-border-color: rgba(107, 122, 133, 0.72);
+    -fx-background-color: #B0B2B8;
+    -fx-text-alignment: center;
+    -fx-text-fill: #CADCF0;
+}
+.Vbox{
+
+}

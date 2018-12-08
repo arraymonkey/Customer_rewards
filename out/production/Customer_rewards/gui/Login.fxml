@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<AnchorPane>
+			<children>
+				<TabPane layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<tabs>
+						<Tab text="Login">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+									<children>
+										<TextField fx:id="txt_email_login" layoutX="209.0" layoutY="98.0" promptText="Email" />
+										<PasswordField fx:id="txt_pass_login" layoutX="209.0" layoutY="155.0" promptText="Password" />
+										<Button fx:id="bnt_login" layoutX="246.0" layoutY="223.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="27.0" prefWidth="94.0" text="Sign In" />
+										<ImageView fitHeight="51.0" fitWidth="157.0" layoutX="15.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="@../../video/arrayMonkey.png" />
+											</image>
+										</ImageView>
+										<Text layoutX="237.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER">
+											<font>
+												<Font size="41.0" />
+											</font>
+										</Text>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+						<Tab text="Register">
+							<content>
+								<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+									<children>
+										<TextField fx:id="txt_fname" layoutX="103.0" layoutY="82.0" promptText="First Name" />
+										<TextField fx:id="txt_lname" layoutX="319.0" layoutY="82.0" promptText="Last Name" />
+										<TextField fx:id="txt_phone" layoutX="103.0" layoutY="138.0" promptText="Phone" />
+										<TextField fx:id="txt_email" layoutX="319.0" layoutY="138.0" promptText="Email" />
+										<PasswordField fx:id="txt_pass" layoutX="103.0" layoutY="197.0" promptText="Password" />
+										<PasswordField fx:id="txt_pass_confirm" layoutX="319.0" layoutY="199.0" promptText="Confirm Password" />
+										<Button layoutX="260.0" layoutY="272.0" mnemonicParsing="false" onAction="#onRegister" text="Register" />
+										<Text layoutX="228.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register">
+											<font>
+												<Font size="34.0" />
+											</font>
+										</Text>
+									</children>
+								</AnchorPane>
+							</content>
+						</Tab>
+					</tabs>
+				</TabPane>
+			</children>
+		</AnchorPane>
+	</children>
+</fx:root>

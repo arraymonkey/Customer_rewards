@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root prefHeight="400.0" prefWidth="450.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView fx:id="table" layoutX="54.0" layoutY="68.0" prefHeight="310.0" prefWidth="333.0">
+            <columns>
+                <TableColumn fx:id="amount" editable="false" prefWidth="146.0" sortable="false" text="Amount" />
+                <TableColumn fx:id="date" editable="false" prefWidth="186.0" text="Date" />
+            </columns>
+        </TableView>
+        <Text layoutX="95.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase History">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </Text>
+    </children>
+</fx:root>
